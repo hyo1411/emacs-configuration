@@ -1,5 +1,4 @@
 (source gnu)
-(source marmalade)
 (source melpa)
 
 (depends-on "ac-js2")
@@ -10,6 +9,7 @@
 (depends-on "cask")
 (depends-on "color-theme")
 (depends-on "color-theme-sanityinc-tomorrow")
+(depends-on "color-theme-solarized")
 (depends-on "color-theme-twilight")
 (depends-on "dash")
 (depends-on "dired-details")
@@ -60,6 +60,7 @@
 (depends-on "skewer-mode")
 (depends-on "smex")
 (depends-on "soft-morning-theme")
+(depends-on "solarized-theme")
 (depends-on "sr-speedbar")
 (depends-on "tabbar")
 (depends-on "w3m")
