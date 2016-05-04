@@ -2,6 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 
+;;; mouse
+(require 'mouse)
+(xterm-mouse-mode t)
+
 ;;; Fancier dired display
 (require 'dired-details+)
 (ido-vertical-mode)

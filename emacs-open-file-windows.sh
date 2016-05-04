@@ -12,12 +12,12 @@ echo $INFO
 if [ "$INFO" == "nil" ];
 then
     echo "No window frame in emacs, launching in new windows frame"
-    emacsclient -c -n $FILE
+    emacsclient -c -n "$FILE"
 elif [ "$INFO" == "t" ];
 then
     echo "Open file in existing windows frame"
     if [[ -n $FILE ]]; then
-        emacsclient -n $FILE
+        emacsclient -n "$FILE"
     else
         emacsclient -e  "(select-frame-set-input-focus (selected-frame))"
     fi
