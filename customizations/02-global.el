@@ -10,6 +10,7 @@
 (require 'dired-details+)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(show-paren-mode 1)
 (defun kill-other-buffers ()
     "Kill all buffers but the current one.
 Don't mess with special buffers."

@@ -31,6 +31,8 @@
 (depends-on "gradle-mode")
 (depends-on "groovy-mode")
 (depends-on "hc-zenburn-theme")
+(depends-on "helm")
+(depends-on "helm-ls-git")
 (depends-on "highlight")
 (depends-on "idle-highlight-mode")
 (depends-on "inf-ruby")

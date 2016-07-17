@@ -30,7 +30,6 @@
  '(flycheck-clang-language-standard "c++11")
  '(foreground-color "#cccccc")
  '(gist-view-gist nil)
- '(global-auto-complete-mode t)
  '(global-flycheck-mode t nil (flycheck))
  '(global-git-commit-mode nil)
  '(global-rainbow-delimiters-mode t)

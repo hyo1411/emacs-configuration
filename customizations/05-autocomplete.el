@@ -25,7 +25,7 @@
 ;;             (setq ac-sources (append '(ac-source-clang
 ;;                                        ac-source-yasnippet)
 ;;                                      ac-sources))))
-;; ac-source-gtags
+;;ac-source-gtags
 
 ;;; set the trigger key so that it can work together with yasnippet on
 ;;; tab key, if the word exists in yasnippet, pressing tab will cause
