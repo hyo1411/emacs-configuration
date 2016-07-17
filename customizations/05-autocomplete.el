@@ -2,10 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-;;; Load yasnippet first to avoid precedence issues
-(require 'yasnippet)
-(yas-global-mode 1)
-
 (require 'auto-complete-config)
 
 
@@ -15,8 +11,7 @@
 (setq ac-quick-help-delay 0.5)
 (ac-set-trigger-key "TAB")
 (define-key ac-mode-map  [(control tab)] 'auto-complete)
-(setq-default ac-sources '(ac-source-yasnippet
-			   ac-source-abbrev
+(setq-default ac-sources '(ac-source-abbrev
 			   ac-source-dictionary
 			   ac-source-words-in-same-mode-buffers))
 (add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)

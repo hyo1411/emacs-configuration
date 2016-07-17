@@ -86,17 +86,6 @@ Assumes that the frame is only split into two."
 	(goto-line (read-number "Goto line: ")))
     (linum-mode -1)))
 
-(add-hook 'ido-setup-hook
-	  (lambda ()
-	    ;; Go straight home
-	    (define-key ido-file-completion-map
-	      (kbd "~")
-	      (lambda ()
-		(interactive)
-		(if (looking-back "/")
-		    (insert "~/")
-		  (call-interactively 'self-insert-command))))))
-
 (global-set-key (kbd "M-j")
 		(lambda ()
 		  (interactive)

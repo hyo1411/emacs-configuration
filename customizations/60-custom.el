@@ -26,7 +26,6 @@
  '(dired-details-hidden-string "")
  '(dired-use-ls-dired nil)
  '(fci-rule-color "#eee8d5")
- '(flx-ido-mode t)
  '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint")
  '(flycheck-clang-language-standard "c++11")
  '(foreground-color "#cccccc")
@@ -58,11 +57,6 @@
  '(hl-fg-colors
    (quote
     ("#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3")))
- '(ido-everywhere t)
- '(ido-mode (quote both) nil (ido))
- '(ido-use-faces t)
- '(ido-use-filename-at-point (quote guess))
- '(ido-use-virtual-buffers t)
  '(js2-basic-offset 2)
  '(keyfreq-autosave-mode t)
  '(keyfreq-mode t)
@@ -103,9 +97,7 @@
  '(xterm-color-names
    ["#eee8d5" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#073642"])
  '(xterm-color-names-bright
-   ["#fdf6e3" "#cb4b16" "#93a1a1" "#839496" "#657b83" "#6c71c4" "#586e75" "#002b36"])
- '(yas-global-mode t nil (yasnippet))
- '(yas-triggers-in-field t))
+   ["#fdf6e3" "#cb4b16" "#93a1a1" "#839496" "#657b83" "#6c71c4" "#586e75" "#002b36"]))
 (provide '60-custom)
 ;;; 60-custom.el ends here
 (custom-set-faces

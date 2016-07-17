@@ -8,7 +8,6 @@
 
 ;;; Fancier dired display
 (require 'dired-details+)
-(ido-vertical-mode)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (defun kill-other-buffers ()
@@ -51,6 +50,12 @@ Don't mess with special buffers."
     (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
 (setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
 (multi-web-global-mode 1)
+
+(defun remove-dos-eol ()
+  "Do not show ^M in files containing mixed UNIX and DOS line endings."
+  (interactive)
+  (setq buffer-display-table (make-display-table))
+  (aset buffer-display-table ?\^M []))
 
 (provide '02-global)
 ;;; 02-global.el ends here
