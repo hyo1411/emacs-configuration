@@ -6,6 +6,9 @@
 (require 'mouse)
 (xterm-mouse-mode t)
 
+;; git commit
+(require 'git-commit)
+
 ;;; Fancier dired display
 (require 'dired-details+)
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -57,6 +60,14 @@ Don't mess with special buffers."
   (interactive)
   (setq buffer-display-table (make-display-table))
   (aset buffer-display-table ?\^M []))
+
+(setq auto-mode-alist
+	  (append
+	   '(("CMakeLists\\.txt\\'" . cmake-mode))
+	   '(("\\.cmake\\'" . cmake-mode))
+	   auto-mode-alist))
+
+(autoload 'cmake-mode "~/.emacs.d/customizations/cmake-mode.el" t)
 
 (provide '02-global)
 ;;; 02-global.el ends here

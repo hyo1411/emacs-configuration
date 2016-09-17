@@ -7,4 +7,5 @@
 (add-hook 'text-mode-hook 'idle-highlight-mode)
 (add-hook 'prog-mode-hook 'idle-highlight-mode)
 
+
 ;;; 50-misc ends here
