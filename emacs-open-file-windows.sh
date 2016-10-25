@@ -5,7 +5,7 @@ echo "Check and open emacs server"
 emacsclient -e '(+ 0 1)' || emacs --daemon
 echo "Open file $1"
 
-[[ -n $1 ]] && FILE=`cygpath -u $1`
+[[ -n $1 ]] && FILE=`cygpath -u "$1"`
 INFO=`emacsclient -e '(find-and-select-window-frame)'`
 echo $INFO
 
