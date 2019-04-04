@@ -10,7 +10,7 @@
 (require 'git-commit)
 
 ;;; Fancier dired display
-(require 'dired-details+)
+;;(require 'dired-details+)
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (show-paren-mode 1)

@@ -20,9 +20,9 @@
 
 
 ;; helm-recentf-fuzzy-match var is broken: redeclare it manually
-(setq helm-source-recentf 
-  (helm-make-source "Recentf" 'helm-recentf-source
-    :fuzzy-match t))
+;;(setq helm-source-recentf 
+;;  (helm-make-source "Recentf" 'helm-recentf-source
+;;    :fuzzy-match t))
 
 (setq helm-recentf-fuzzy-match t
       helm-buffers-fuzzy-matching t

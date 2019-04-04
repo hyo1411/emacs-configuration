@@ -12,8 +12,6 @@
 (depends-on "color-theme-sanityinc-tomorrow")
 (depends-on "color-theme-solarized")
 (depends-on "dash")
-(depends-on "dired-details")
-(depends-on "dired-details+")
 (depends-on "drag-stuff")
 (depends-on "ecb")
 (depends-on "enclose")
